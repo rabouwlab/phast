@@ -22,7 +22,7 @@ deps=$(ntldd -R ${deployDir}${appName} | grep -v 'C:\\WINDOWS\\' | grep -v ext-m
 depsLocs=$(which ${deps})
 
 # Filter out dependencies provided by windows
-depsFiltered=$(echo ${depsLocs} | grep -v 'Windows/System32')
+depsFiltered=$(printf '%s\n' "${depsLocs[@]}" | grep -v 'Windows/System32')
 
 # Copy in dependencies
 for dep in $depsFiltered
@@ -43,7 +43,7 @@ do
 	depsLocsTemp=$(which ${depsTemp})
 
 	# Filter out dependencies provided by windows
-	depsFilteredTemp=$(echo ${depsLocsTemp} | grep -v 'Windows/System32')
+	depsFilteredTemp=$(printf '%s\n' "${depsLocsTemp[@]}" | grep -v 'Windows/System32')
 
 	# Copy in dependencies
 	for dep in $depsFilteredTemp
