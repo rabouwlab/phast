@@ -2,6 +2,7 @@
 PHoton Arrival-time STudio (PHAST) is a GUI application for time-correlated single-photon counting (TCSPC) experiments. It can control time-to-digital converters (TDCs, aka 'time taggers'), process the data, and display---in real time---intensity traces, decay curves, and correlation curves, and store the collected raw data. The application depends on [libtimetag](https://github.com/rabouwlab/libtimetag) for data processing. PHAST is used on a daily basis for data acquisition at the lab of [Freddy Rabouw](https://www.uu.nl/medewerkers/FTRabouw) at Utrecht University. The library was originally developed by Stijn Hinterding.
 
 ![Screenshot of PHAST in action](images/example_image.png)
+Screenshot of PHAST in action, showcasing live intensity-trace, decay-curve, and correlation-curve displays.
 
 ## Supported hardware
 PHAST has been developed for use with quTools' [quTAU](https://www.qutools.com/quTAU/) and [quTAG](https://www.qutools.com/quTAG/). These time taggers should work out of the box. If your use case is different than ours, it may be that you run into bugs---please file a bug report on github.
@@ -15,7 +16,7 @@ PHAST was developed on Windows, and has only been used on that platform up to no
 Simply download and unzip the application, and you should be good to go.
 
 # Usage
-(to be written)
+See [app_readme.txt](app_readme.txt).
 
 # Compiling
 ## Dependencies
