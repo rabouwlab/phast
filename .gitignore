@@ -1,0 +1,7 @@
+*autosave
+*.pro.user.*
+*.pro.user
+*SFConflict*
+*.zip
+build/
+deployed/

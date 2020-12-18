@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>widget_decaybinsettings</class>
+ <widget class="QDialog" name="widget_decaybinsettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>341</width>
+    <height>204</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Decay plot bin settings</string>
+  </property>
+  <widget class="QLabel" name="lbl_bin_max">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>60</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X max</string>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="cnt_bin_low">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>30</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-999999999999999929757289024535551219930759168.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000000000000042420637374017961984.000000000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_time_unit_4">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ns</string>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="cnt_bin_high">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>60</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-999999999999999929757289024535551219930759168.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000000000000042420637374017961984.000000000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_num_bins">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>90</y>
+     <width>41</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bin size</string>
+   </property>
+  </widget>
+  <widget class="QListWidget" name="list_chans">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>30</y>
+     <width>121</width>
+     <height>81</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bin_min">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>30</y>
+     <width>31</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X min</string>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="cnt_num_bins">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>90</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000000000000042420637374017961984.000000000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_time_unit_5">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>90</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>t.u.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_time_unit_3">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>30</y>
+     <width>21</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ns</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_channels">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Chans. to bin and sum</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_OK">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>160</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_cancel">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>160</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chk_sum">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>120</y>
+     <width>91</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sum channels</string>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtCounter</class>
+   <extends>QWidget</extends>
+   <header>qwt_counter.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

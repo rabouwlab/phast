@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WidgetPlotSettings</class>
+ <widget class="QDialog" name="WidgetPlotSettings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>610</width>
+    <height>77</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Plot settings</string>
+  </property>
+  <widget class="QLabel" name="lbl_x">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_y">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>50</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Y</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_xmin">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>0</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Minimum</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chk_auto_xmin">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>auto</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_max">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>0</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Maximum</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chk_xlog">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>20</y>
+     <width>41</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>log</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chk_xmax_auto">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>auto</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chk_auto_ymin">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>auto</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chk_ymax_auto">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>50</y>
+     <width>51</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>auto</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chk_ylog">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>50</y>
+     <width>41</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string>log</string>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="cnt_x_const_width">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>20</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000000000000057857959942726969827393378689175040438172647424.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chk_x_const_size">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>20</y>
+     <width>71</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>const. size</string>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="cnt_y_const_width">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>50</y>
+     <width>62</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000000000000072531436381529235126158374409646521955518210155479040.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.000000000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="chk_y_const_size">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>50</y>
+     <width>71</width>
+     <height>19</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::RightToLeft</enum>
+   </property>
+   <property name="text">
+    <string>const. size</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_bin_size">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>0</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Bin size (time units)</string>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="cnt_bin_width">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>20</y>
+     <width>81</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>1000000000000000057857959942726969827393378689175040438172647424.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>1.000000000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_clear_all_views">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>50</y>
+     <width>80</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
+   <property name="text">
+    <string>Clear all views</string>
+   </property>
+   <property name="autoDefault">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="spb_xmin">
+   <property name="geometry">
+    <rect>
+     <x>81</x>
+     <y>20</y>
+     <width>71</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-99999999999999996863366107917975552.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000000000000001463069523067487303097004298786465505927861078716979636425114821591040.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.000001000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="spb_xmax">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>71</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-99999999999999996863366107917975552.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000000000000001463069523067487303097004298786465505927861078716979636425114821591040.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.000001000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="spb_ymin">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>50</y>
+     <width>71</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-99999999999999996863366107917975552.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000000000000001463069523067487303097004298786465505927861078716979636425114821591040.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.000001000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+  <widget class="QwtCounter" name="spb_ymax">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>50</y>
+     <width>71</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="minimum">
+    <double>-99999999999999996863366107917975552.000000000000000</double>
+   </property>
+   <property name="maximum">
+    <double>100000000000000001463069523067487303097004298786465505927861078716979636425114821591040.000000000000000</double>
+   </property>
+   <property name="singleStep">
+    <double>0.000001000000000</double>
+   </property>
+   <property name="numButtons">
+    <number>0</number>
+   </property>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QwtCounter</class>
+   <extends>QWidget</extends>
+   <header>qwt_counter.h</header>
+  </customwidget>
+ </customwidgets>
+ <tabstops>
+  <tabstop>chk_auto_xmin</tabstop>
+  <tabstop>chk_xmax_auto</tabstop>
+  <tabstop>chk_auto_ymin</tabstop>
+  <tabstop>chk_ymax_auto</tabstop>
+  <tabstop>chk_xlog</tabstop>
+  <tabstop>chk_ylog</tabstop>
+  <tabstop>chk_x_const_size</tabstop>
+  <tabstop>chk_y_const_size</tabstop>
+  <tabstop>cnt_x_const_width</tabstop>
+  <tabstop>cnt_y_const_width</tabstop>
+  <tabstop>cnt_bin_width</tabstop>
+  <tabstop>btn_clear_all_views</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

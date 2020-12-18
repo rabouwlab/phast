@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>878</width>
+    <height>38</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Time tag control app</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>878</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuImport">
+     <property name="title">
+      <string>Import</string>
+     </property>
+     <addaction name="actionQuTau_file"/>
+     <addaction name="action_sstt"/>
+    </widget>
+    <addaction name="menuImport"/>
+    <addaction name="actionExport_as_stcspc"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Channels</string>
+    </property>
+    <addaction name="actionChannels"/>
+   </widget>
+   <widget class="QMenu" name="menuViews">
+    <property name="title">
+     <string>Views</string>
+    </property>
+    <addaction name="actionData_writer"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionAbout_this_program"/>
+    <addaction name="actionConnection_info"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSettings"/>
+   <addaction name="menuViews"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <action name="actiondT_TimeTagged_file">
+   <property name="text">
+    <string>dT-TimeTagged file</string>
+   </property>
+  </action>
+  <action name="actionQuTau_file">
+   <property name="text">
+    <string>QuTau file</string>
+   </property>
+  </action>
+  <action name="actionExport_as_ttdt">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Export as .ttdt</string>
+   </property>
+  </action>
+  <action name="actionChannels">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Overview</string>
+   </property>
+  </action>
+  <action name="actionDecay_Curve">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Decay Curve</string>
+   </property>
+  </action>
+  <action name="actionExport_as_txt">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Export as .txt</string>
+   </property>
+  </action>
+  <action name="actionTrigger_settings">
+   <property name="text">
+    <string>Trigger + delay</string>
+   </property>
+  </action>
+  <action name="actionAbout_this_program">
+   <property name="text">
+    <string>About this program</string>
+   </property>
+  </action>
+  <action name="actionConnection_info">
+   <property name="text">
+    <string>Connection info</string>
+   </property>
+  </action>
+  <action name="actionCorrelation_curve">
+   <property name="text">
+    <string>Correlation curve</string>
+   </property>
+  </action>
+  <action name="actionIntensity_trace">
+   <property name="text">
+    <string>Intensity trace</string>
+   </property>
+  </action>
+  <action name="actionExport_as_stcspc">
+   <property name="text">
+    <string>Export as .sstt</string>
+   </property>
+  </action>
+  <action name="action_sstt">
+   <property name="text">
+    <string>.sstt</string>
+   </property>
+  </action>
+  <action name="actionData_writer">
+   <property name="text">
+    <string>Data writer</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
