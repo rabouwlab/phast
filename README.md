@@ -20,6 +20,9 @@ Simply download and unzip the application, and you should be good to go.
 # Usage
 See [app_readme.txt](app_readme.txt).
 
+# Importing data
+Data saved by PHAST can be imported in Python using libtimetag. See [the example notebook](https://github.com/rabouwlab/libtimetag/blob/master/examples/libtimetag_example-notebook.ipynb).
+
 # Compiling
 ## Dependencies
 Make sure you have the following:
