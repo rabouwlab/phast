@@ -4,14 +4,14 @@
 
 #include "mainplot.h"
 
-#include <qwt/qwt_plot_canvas.h>
-#include <qwt/qwt_legend.h>
-#include <qwt/qwt_scale_engine.h>
-#include <qwt/qwt_symbol.h>
-#include <qwt/qwt_plot_marker.h>
-#include <qwt/qwt_plot_zoomer.h>
-#include <qwt/qwt_picker_machine.h>
-#include <qwt/qwt_plot_layout.h>
+#include <qwt-qt5/qwt_plot_canvas.h>
+#include <qwt-qt5/qwt_legend.h>
+#include <qwt-qt5/qwt_scale_engine.h>
+#include <qwt-qt5/qwt_symbol.h>
+#include <qwt-qt5/qwt_plot_marker.h>
+#include <qwt-qt5/qwt_plot_zoomer.h>
+#include <qwt-qt5/qwt_picker_machine.h>
+#include <qwt-qt5/qwt_plot_layout.h>
 
 #include "customscaledraw.h"
 

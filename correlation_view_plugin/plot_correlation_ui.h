@@ -6,7 +6,7 @@
 #define PLOT_CORRELATION_UI_H
 
 #include <phast_gui/base/base_view_plot.h>
-#include <qwt/qwt_plot_curve.h>
+#include <qwt-qt5/qwt_plot_curve.h>
 
 class plot_correlation_ui : public base_view_plot
 {

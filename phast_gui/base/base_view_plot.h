@@ -8,7 +8,7 @@
 #include <QDialog>
 #include <QListWidgetItem>
 
-#include <qwt/qwt_plot_curve.h>
+#include <qwt-qt5/qwt_plot_curve.h>
 #include "../support/typedefs.h"
 
 #include "../interfaces/ibinningclass.h"

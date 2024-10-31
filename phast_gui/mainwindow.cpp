@@ -3,7 +3,7 @@
 
 #include "support/mainplot.h"
 
-#include <qwt/qwt_plot_curve.h>
+#include <qwt-qt5/qwt_plot_curve.h>
 
 #include <vector>
 #include <math.h>

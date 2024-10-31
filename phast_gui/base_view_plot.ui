@@ -80,13 +80,13 @@
  </widget>
  <customwidgets>
   <customwidget>
-   <class>QwtPlot</class>
+   <class>qwtPlot</class>
    <extends>QFrame</extends>
    <header>qwt_plot.h</header>
   </customwidget>
   <customwidget>
    <class>MainPlot</class>
-   <extends>QwtPlot</extends>
+   <extends>qwtPlot</extends>
    <header>support/mainplot.h</header>
    <slots>
     <slot>set_x_min(double)</slot>

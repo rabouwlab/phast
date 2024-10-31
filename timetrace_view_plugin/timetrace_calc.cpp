@@ -6,6 +6,7 @@
 
 #include <libtimetag/algos.h>
 #include <iostream>
+#include <cmath>
 
 timetrace_calc::timetrace_calc(const std::vector<chan_id> &chans_to_sum,
                                uint64_t bin_width,

@@ -12,7 +12,7 @@
 #include <QCheckBox>
 #include <QComboBox>
 #include <QtGlobal>
-#include <qwt/qwt_counter.h>
+#include <qwt-qt5/qwt_counter.h>
 #include <QMessageBox>
 
 void ChannelOverviewUI::init_ui_table()

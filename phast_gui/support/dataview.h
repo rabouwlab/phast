@@ -7,7 +7,7 @@
 
 #include <QObject>
 #include <map>
-#include <qwt/qwt_plot_curve.h>
+#include <qwt-qt5/qwt_plot_curve.h>
 
 #include "../support/plotparams.h"
 #include "../support/typedefs.h"

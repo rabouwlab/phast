@@ -17,10 +17,10 @@ CONFIG += plugin
 QMAKE_CXXFLAGS += -Wno-unused-parameter
 
 # Add qwt directory to search path
-INCLUDEPATH += $$[QT_INSTALL_PREFIX]"/include/qwt"
+INCLUDEPATH += $$[QT_INSTALL_PREFIX]"/include/qwt-qt5"
 
 # Also the qwt lib
-LIBS += -lqwt
+LIBS += -lqwt-qt5
 
 INCLUDEPATH += $$PWD/..
 

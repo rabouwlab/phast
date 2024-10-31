@@ -9,10 +9,10 @@ LIBS += -L$$OUT_PWD/../phast_gui -lphast_gui
 
 
 # Add qwt directory to search path
-INCLUDEPATH += $$[QT_INSTALL_PREFIX]"/include/qwt"
+INCLUDEPATH += $$[QT_INSTALL_PREFIX]"/include/qwt-qt5"
 
 # Also the qwt lib
-LIBS += -lqwt
+LIBS += -lqwt-qt5
 
 # We also require libtimetag
 LIBS += -llibtimetag

@@ -10,7 +10,7 @@
 #include <QComboBox>
 #include <QSpinBox>
 
-#include <qwt/qwt_counter.h>
+#include <qwt-qt5/qwt_counter.h>
 
 #include <vector>
 

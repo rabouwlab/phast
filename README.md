@@ -27,15 +27,33 @@ Data saved by PHAST can be imported in Python using libtimetag. See [the example
 ## Dependencies
 Make sure you have the following:
 1) [Qt5](https://www.qt.io/)
-2) [QWT](https://qwt.sourceforge.io/)
+2) [qwt](https://qwt.sourceforge.io/)
 3) [gsl](https://www.gnu.org/software/gsl/)
 4) [libtimetag](https://github.com/stijnhinterding/libtimetag)
-5) ([ntldd](https://github.com/LRN/ntldd) - for deployment only)
+5) [libGLESv2](https://chromium.googlesource.com/angle/angle)
+6) ([ntldd](https://github.com/LRN/ntldd) - for deployment only)
 
 On Windows, everything except #4 can be conveniently installed using [MSYS2](www.msys2.org).
 
 ## Compilation and deployment under MSYS2
 Simply execute ``build_and_deploy.sh``.
+
+Or execute the following shell commands (make sure to be in a "UCRT64" MSYS2 terminal) to install all required dependencies, compile and deploy:
+
+	pacman -S mingw-w64-ucrt-x86_64-toolchain make mingw-w64-ucrt-x86_64-cmake mingw-w64-ucrt-x86_64-qt5-base mingw-w64-ucrt-x86_64-qwt-qt5 mingw-w64-ucrt-x86_64-gsl mingw-w64-ucrt-x86_64-ntldd mingw-w64-ucrt-x86_64-qt-creator mingw-w64-ucrt-x86_64-qt5-tools mingw-w64-ucrt-x86_64-angleproject git -y
+	cd ~
+	git clone https://github.com/stijnhinterding/libtimetag.git
+	cd libtimetag
+	mkdir build
+	cmake -DCMAKE_INSTALL_PREFIX:PATH=/ucrt64 ..
+	Ninja
+	Ninja install
+	cd ~
+	rm -rf ./libtimetag/
+	git clone https://github.com/rabouwlab/phast.git
+	cd phast
+	./build_and_deploy.sh
+
 
 ## Compilation in other environments
 Either open ``phast.pro`` in QtCreator and compile, or execute the following shell commands:

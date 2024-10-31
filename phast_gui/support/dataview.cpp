@@ -8,7 +8,7 @@
 #include "mainplot.h"
 
 #include <QTimer>
-#include <qwt/qwt_plot_curve.h>
+#include <qwt-qt5/qwt_plot_curve.h>
 
 DataView::~DataView()
 {

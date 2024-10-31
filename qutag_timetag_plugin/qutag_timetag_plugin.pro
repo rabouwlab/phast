@@ -19,10 +19,10 @@ LIBS += -L$$OUT_PWD/../phast_gui -lphast_gui
 LIBS += -L$$PWD/qutag_lib -ltdcbase
 
 # Add qwt directory to search path
-INCLUDEPATH += $$[QT_INSTALL_PREFIX]"/include/qwt"
+INCLUDEPATH += $$[QT_INSTALL_PREFIX]"/include/qwt-qt5"
 
 # Also the qwt lib
-LIBS += -lqwt
+LIBS += -lqwt-qt5
 INCLUDEPATH += $$PWD/..
 
 SOURCES += \

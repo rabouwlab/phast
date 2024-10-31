@@ -5,7 +5,7 @@
 #ifndef MAINPLOT_H
 #define MAINPLOT_H
 
-#include <qwt/qwt_plot.h>
+#include <qwt-qt5/qwt_plot.h>
 
 class QwtPlotCurve;
 class QwtPlotMarker;
